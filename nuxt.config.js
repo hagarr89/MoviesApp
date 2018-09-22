@@ -28,13 +28,11 @@ module.exports = {
  css: [
   '~/styles/main.scss'
 ],
-  loading: { color: '#3B8070' },
+  loading: { color: '#000' },
   /*
   ** Build configuration
   */
  plugins:[
-  '~/plugins/chart.js',
-  {src: '~/plugins/resize.js', ssr: false},
 ],
   build: {
     /*
