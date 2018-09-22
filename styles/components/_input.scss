@@ -1,0 +1,25 @@
+
+.input-style , select.input-style{
+  height: 38px;  
+  width: 100%; 
+  max-width: 230px;
+  margin-bottom: 0;
+  padding: 0 0.5rem
+}
+.label-style{
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-top: 0.5rem;
+}
+.placeholder{
+  line-height: 1;
+  font-weight: 500;
+  padding-right: 15px;
+  flex: 0 0 auto;
+}
+input, textarea, select {
+  &:focus {
+    outline: 0;
+  }
+}

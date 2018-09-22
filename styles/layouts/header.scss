@@ -1,0 +1,118 @@
+@import "../config/index";
+
+.header-comp {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  .toggle-nav-input{
+    width: 25px;
+    height: 20px;
+    display: inline-block;
+    .icon-burger{
+      background: #3c3c3c;
+      width: 100%;
+      height: 1px;
+      display: block;
+      margin-bottom: 8px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .header-wrap{
+    padding-top: 25px;
+    .logo-wrap{
+      display: inline-block;
+    }
+  }
+  .navigation {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .menu-wrap{
+      padding-right: 30px;
+      font-weight: 300;
+      font-size: 1rem;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .header-comp {
+    .header-wrap{
+      padding-top: 12px;
+      padding-bottom: 12px;
+      background: #fff;
+    }
+    .logo-wrap{
+      padding-left: 15px;
+    }
+    .site-navigation {
+      position: static;
+      .menu-wrap{
+        top: -100%;
+        visibility: hidden;
+        right: 0;
+        width: 100%;
+        position: absolute;
+        background: #020d3d;
+        height: auto;
+        color: #fff;
+        padding: 45px 45px;
+        z-index: 10;
+        overflow-y: scroll;
+        transition: opacity 0.25s ease , top 0.35s ease;
+        &.open{
+          top: 0;
+          opacity: 1;
+          visibility: visible;
+        }
+        .exit{
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          font-size: 1.25rem;
+        }
+        li{
+          font-size: 1rem;
+          letter-spacing: 0.9px;
+          a{
+            padding-top: 0;
+            padding-bottom: 25px;
+            margin-bottom: 25px;
+            border-bottom:1px solid rgba(41, 170, 226, 0.2);
+            width: 100%;
+            display: block;
+          }
+          &:last-child{
+            a {
+              padding-bottom: 0!important;
+              margin-bottom: 0!important;
+              border-bottom: none!important;
+            }
+          }
+        }
+
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .header-comp .site-navigation .menu-wrap {
+    padding: 35px 35px;
+    .exit{
+
+    }
+    li {
+      a{
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+      }
+
+    }
+  }
+}

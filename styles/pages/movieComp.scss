@@ -1,0 +1,44 @@
+@import "../config/index";
+
+.movie-comp{
+    position: relative;
+    border: 1px solid #fff;
+    cursor: pointer;
+    &:hover{
+        .poster{
+            transform: scale(1.05);
+        }
+    }
+    &:before {
+      display: block;
+      content: "";
+      width: 100%;
+      padding-top:150%;
+    }
+    > .movie_inner_comp {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      overflow: hidden;
+    }
+    .poster{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top:0;
+        right: 0;
+        z-index: 1;
+        pointer-events: none;
+        background-size: cover;
+        transition: transform 0.35s ease;
+        background-position: center center;
+    }
+}
+
+@include media-breakpoint-down(md) {
+}
+
+@include media-breakpoint-down(sm) {
+}

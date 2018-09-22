@@ -1,0 +1,138 @@
+@import "../config/index";
+.footer-comp {
+  background: #2b2b2b;
+  color: #fff;
+  padding: 35px 0;
+  font-weight: 300;
+  .logo-white.svg {
+    width: 148px;
+  }
+  .content {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 25px;
+  }
+  .menu-wrap {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    .link-item {
+      transition: color 0.25s ease;
+      &:hover {
+        color: $hover-color;
+      }
+    }
+    .list-item {
+      padding-right: 58px;
+      &:last-child {
+        padding-right: 0;
+      }
+
+    }
+    .list-social {
+      display: flex;
+      align-items: center;
+      .social-item {
+        padding-right: 25px;
+        font-size: 1.125rem;
+        transition: color 0.25s ease;
+        &:hover {
+          color: $hover-color;
+        }
+        &.ttl {
+          font-size: 1rem;
+          &:hover {
+            color: #fff;
+          }
+        }
+      }
+    }
+
+  }
+  .warning {
+    font-size: 0.6875rem;
+    max-width: 1231px;
+    margin: 0 auto;
+    padding-top: 25px;
+    text-align: center;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .footer-comp {
+    .menu-wrap {
+      font-size: 0.875rem;
+      .list-social .social-item {
+        font-size: 1rem;
+        padding-right: 15px;
+      }
+      .list-item {
+        padding-right: 25px;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .footer-comp {
+    padding: 25px 0;
+    .warning{
+      padding-top: 15px;
+    }
+    .content{
+      padding-bottom: 15px;
+    }
+    .logo-container{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .logo-white.svg{
+        width: auto;
+      }
+      .logo-wrap{
+        flex: 0 1 50%;
+        padding-right: 25px;
+        &.wearable{
+          flex: 1 1 75%;
+          padding-right: 0;
+        }
+      }
+    }
+    .menu-wrap {
+      justify-content: center;
+      font-size: 1rem;
+      .list-item {
+        padding-top: 15px;
+        &.list-social {
+          padding-right: 0;
+          padding-top: 0;
+          width: 100%;
+          .social {
+            border-top:1px solid rgba(255, 255, 255, 0.2);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            margin: 15px 0 0;
+            display: flex;
+            width: 100%;
+            padding-right: 0;
+            text-align: center;
+            align-self: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding-top: 15px;
+            .social-item {
+              font-size: 1.5rem;
+              padding-right: 30px;
+              display: inline-block;
+              margin-bottom: 15px;
+              &.ttl {
+                font-size: 1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

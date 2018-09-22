@@ -1,0 +1,35 @@
+{
+  "name": "movies",
+  "version": "1.0.0",
+  "description": "Nuxt.js project",
+  "author": "",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.3.1",
+    "axios": "^0.18.0",
+    "bootstrap-vue": "^2.0.0-rc.11",
+    "chart.js": "^2.7.2",
+    "node-sass": "^4.9.3",
+    "nuxt": "^1.0.0",
+    "sass-loader": "^7.1.0",
+    "vue-chartjs": "^3.4.0",
+    "vue-draggable-resizable": "^1.7.2",
+    "vue-google-charts": "^0.3.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "eslint": "^4.15.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-vue": "^4.0.0",
+    "vue-charts": "^0.2.1"
+  }
+}

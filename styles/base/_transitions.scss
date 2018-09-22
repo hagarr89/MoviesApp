@@ -1,0 +1,18 @@
+// Fade
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .3s;
+}
+
+.fade-enter, .fade-leave-to {
+  max-height: 0;
+}
+
+
+.wide-enter-active, .wide-leave-active {
+  transition: max-height .3s ease;
+}
+
+.wide-enter, .wide-leave-to {
+  max-height: 0;
+  opacity: 0;
+}
