@@ -19,17 +19,13 @@
     "chart.js": "^2.7.2",
     "node-sass": "^4.9.3",
     "nuxt": "^1.0.0",
-    "sass-loader": "^7.1.0",
-    "vue-chartjs": "^3.4.0",
-    "vue-draggable-resizable": "^1.7.2",
-    "vue-google-charts": "^0.3.1"
+    "sass-loader": "^7.1.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
     "eslint": "^4.15.0",
     "eslint-friendly-formatter": "^3.0.0",
     "eslint-loader": "^1.7.1",
-    "eslint-plugin-vue": "^4.0.0",
-    "vue-charts": "^0.2.1"
+    "eslint-plugin-vue": "^4.0.0"
   }
 }
