@@ -11,6 +11,8 @@ $ npm install # Or yarn install
 # serve with hot reload at localhost:3000
 $ npm run dev
 
+#please Note: in order for Nuxt.js to work you need npm>=5 and node >=8
+
 # build for production and launch server
 $ npm run build
 $ npm start
